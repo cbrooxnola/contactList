@@ -25,7 +25,9 @@ function App() {
   return (
     <>
     <h1>Contact List ({ users.length })</h1>
-    { user ? <p>user.address</p>: null }
+    { 
+    user ? (<p>{ user.address }</p>) : null 
+    }
     <ul>
       {
         users.map( user =>{
